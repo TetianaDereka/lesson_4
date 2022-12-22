@@ -25,10 +25,15 @@
         </thead>
 </br>
 <form action="forms.html" method="get">
+
   <fieldset>
     <legend>Contact information</legend>
-    <label for="email" >E-mail:</label>
-    <input type="text" id="email" name="email" >
+    <label>E-mail:
+        <input 
+          type="text" 
+          required
+          name="email" />
+      </label>
 </br>    
     <label for="description">Description:
         <textarea name="description" rows="10" cols="40"></textarea>
