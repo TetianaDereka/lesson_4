@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>   
+       div {
+        margin-bottom: 10px;
+      }
+      label {
+        display: inline-block;
+        width: 110px;
+      
+      }
+      input {
+        padding: 5px 10px;
+        width: 110px;
+      }
+
+    </style>
+
     <meta charset="UTF-8">
     <title>Job_offer</title>
   </head>
@@ -23,6 +39,7 @@
               <td>Kyiv, Ukraine</td>
             </tr>
         </thead>
+    </table>
 </br>
 <form action="forms.html" method="get">
 
@@ -32,12 +49,25 @@
         <input 
           type="text" 
           required
-          name="email" />
+          name="email"
+          placeholder="E-mail"
+          />
       </label>
-</br>    
+<br/>    
     <label for="description">Description:
-        <textarea name="description" rows="10" cols="40"></textarea>
+        <textarea name="description" rows="10"cols="40" placeholder="Description"></textarea>
     </label>
-    
-  </fieldset> 
+<br/>
+    <label>
+        Work type:
+        <select 
+          name="work-type">
+          <option value="full-time">Full-time</option>
+          <option value="remote">Remote</option>
+          <option value="project">Project</option>
+        </select>
+      </label>
+<br/>
+      <input type="submit" value="Hire me">
+</fieldset> 
 </form>
